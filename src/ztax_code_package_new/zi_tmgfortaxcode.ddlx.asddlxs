@@ -1,0 +1,65 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'TmgForTaxCode', 
+    typeNamePlural: 'TmgForTaxCodes', 
+    title: {
+      type: #STANDARD, 
+      label: 'TMG for tax code', 
+      value: 'Taxcode'
+    }
+  }
+}
+annotate view ZI_TmgForTaxCode with
+{
+  @UI.identification: [ {
+    position: 1 
+  } ]
+  @UI.lineItem: [ {
+    position: 1 
+  } ]
+  @UI.facet: [ {
+    id: 'ZI_TmgForTaxCode', 
+    purpose: #STANDARD, 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'TMG for tax code', 
+    position: 1 
+  } ]
+  Taxcode;
+  
+  @UI.identification: [ {
+    position: 2 
+  } ]
+  @UI.lineItem: [ {
+    position: 2 
+  } ]
+  Transactionkey;
+  
+  @UI.identification: [ {
+    position: 3 
+  } ]
+  @UI.lineItem: [ {
+    position: 3 
+  } ]
+  ConditionType;
+  
+  @UI.identification: [ {
+    position: 4 , 
+    label: 'Taxcodedescription'
+  } ]
+  @UI.lineItem: [ {
+    position: 4 , 
+    label: 'Taxcodedescription'
+  } ]
+  Taxcodedescription;
+  
+  @UI.identification: [ {
+    position: 5 , 
+    label: 'Gstrate'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 , 
+    label: 'Gstrate'
+  } ]
+  Gstrate;
+}

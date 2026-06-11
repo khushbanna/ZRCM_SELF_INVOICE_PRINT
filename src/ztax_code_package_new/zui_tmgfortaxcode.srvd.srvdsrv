@@ -1,0 +1,5 @@
+@ObjectModel.leadingEntity.name: 'ZI_TmgForTaxCode_S'
+define service ZUI_TMGFORTAXCODE {
+  expose ZI_TMGFORTAXCODE_S as TmgForTaxCodeAll;
+  expose ZI_TMGFORTAXCODE as TmgForTaxCode;
+}
